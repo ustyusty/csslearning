@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>попа</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img.svg" type="image/svg">
+  </head>
+  <body>
+    <h1>окак</h1>
+    <div class="container">   
+            <img class="jopa" src ="img.jpg" alt="jopa">
+
+            <div class="forms">
+            <input type="text" placeholder="Введите текст" id="taskInput">
+            <button id="addTaskBtn" type="submit">
+                <span>Отправить</span>
+            </button>
+
+        </div>
+    </div>
+</div>
+  </body>
+              <script>
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Останавливаем перезагрузку страницы
+    
+    const input = document.getElementById('textInput');
+    const value = input.value.trim();
+    
+    if (value) {
+        alert('Вы отправили: ' + value);
+        input.value = ''; // Очищаем поле
+    } else {
+        alert('Пожалуйста, введите текст!');
+    }
+});
+
+</script>
+</html>

@@ -1,0 +1,105 @@
+* {
+    user-select: none;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+}
+img {
+    user-select: auto;
+    -webkit-user-select: none;
+    pointer-events: none; /* Дополнительно отключает события мыши */
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0 0 10px rgba(52, 245, 46, 0.8);
+};
+
+.jopaform {
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(80, 97, 84, 0.8);
+    overflow: hidden;
+}
+
+body{
+    background: linear-gradient(120deg,#ff9966 0%, #ff5e62 100% );
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.jopa{
+    background-color: #ffffff;
+    border-radius: 20px;
+    max-width: 600px;
+    display: flex;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+.forms {
+    display: flex;
+    align-items: stretch; /* Растягиваем по высоте */
+    max-width: 500px;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.forms input {
+    flex: 1;
+    padding: 14px 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f8f9fa;
+}
+
+.forms input:focus {
+    background: #fff;
+
+}
+
+.forms button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 25px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.forms:hover {
+    box-shadow: 0 8px 15px rgba(118, 75, 162, 0.3);
+}
+
+.forms button:active {
+    transform: scale(0.95);
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+}
+.icon {
+    font-size: 18px;
+}
