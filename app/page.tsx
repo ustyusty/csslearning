@@ -14,7 +14,7 @@ export default function Home() {
   
   return (
     <div>
-      <div className="min-h-screen flex flex-col items-center justify-center p-4">
+      <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-gray-950">
       <div className="w-full max-w-sm space-y-6 border border-white p-5 rounded-xl">
         <div className="flex items-center flex-row gap-2">
           <div className="w-full border border-white text-end px-1.5 pt-0.5 rounded-md overflow-hidden">
@@ -37,6 +37,7 @@ function SendBtn({func}:{func:(param: void) => void}){
   return(
     <div>
       <button className="
+      group
         border rounded-xl
         hover:bg-black
         hover:border-gray-300 
