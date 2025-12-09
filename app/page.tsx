@@ -14,10 +14,10 @@ export default function Home() {
   
   return (
     <div>
-      <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-linear-120 from-slate-900 to-black">
+      <div className="min-h-screen flex flex-col items-center justify-center p-4 bg-linear-120 from-slate-900 to-cyan-950">
       <div className="w-full max-w-sm space-y-6 p-5 rounded-xl bg-gray-900">
-        <div className="flex items-center flex-row gap-3">
-          <div className="w-full text-end px-1.5 pt-0.5 rounded-md overflow-hidden bg-gray-800">
+        <div className="flex items-center flex-row gap-3 h-10">
+          <div className="w-full text-end px-1.5 pt-0.5 rounded-md overflow-hidden bg-gray-800 text-gray-200">
             <Display text={text} setCount={(text) => setCount(text)}/>
           </div>
           <div className="gap-2 py-5">
@@ -38,6 +38,7 @@ function SendBtn({func}:{func:(param: void) => void}){
     <div>
       <button className="
         rounded-lg
+        text-gray-200
         bg-gray-800
         hover:bg-blue-200/15
         active:bg-gray-100/15
@@ -76,6 +77,7 @@ function Butn({text, func}:{text: number, func:(param: number) => void}){
       <button className=" h-15 w-15 
                 rounded-lg
         bg-gray-800
+        text-gray-200
         hover:bg-blue-200/15
         hover:border-white
         active:bg-gray-100/15
