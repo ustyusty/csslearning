@@ -40,11 +40,11 @@ function SendBtn({func}:{func:(param: void) => void}){
       group
         border rounded-xl
         hover:bg-black
-        hover:border-gray-300 
+        hover:border-white
         active:bg-gray-100/15
         active:scale-90
         transition-colors
-        duration-200"
+        duration-100"
       onClick={() => {func()}}
       ><div className="flex border min-w-15 flex-col items-center px-1.5 py-0.5 rounded-md ">{"->"}</div>
       </button>
@@ -77,11 +77,11 @@ function Butn({text, func}:{text: number, func:(param: number) => void}){
       <button className=" h-15 w-15 
         border rounded-xl
         hover:bg-black
-        hover:border-gray-300 
+        hover:border-white
         active:bg-gray-100/15
         active:scale-90
         transition-colors
-        duration-200"
+        duration-100"
         onClick={() =>{
           func(text)}}>
         <div>
